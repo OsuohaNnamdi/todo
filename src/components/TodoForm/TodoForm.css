@@ -51,3 +51,34 @@
   .add-button:hover {
     background-color: #303f9f;
   }
+/* Update TodoForm.css */
+.todo-form {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.form-group {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .form-group {
+    flex-direction: row;
+  }
+}
+
+.todo-input, .priority-select {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .todo-input {
+    width: auto;
+    flex: 1;
+  }
+  
+  .priority-select {
+    width: 150px;
+  }
+}
