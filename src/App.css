@@ -76,3 +76,24 @@ body {
     padding: 1rem;
   }
 }
+/* Add these to your existing App.css */
+:root {
+  --mobile-breakpoint: 768px;
+}
+
+/* Responsive container */
+.app-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0.5rem;
+  }
+}
