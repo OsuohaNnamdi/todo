@@ -1,4 +1,31 @@
-/* SearchFilter.css */
+/* Update SearchFilter.css */
+.filter-container {
+  gap: 0.75rem;
+}
+
+.search-box {
+  margin-bottom: 0.5rem;
+}
+
+.filter-buttons {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .filter-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .search-box {
+    margin-bottom: 0;
+    flex: 1;
+  }
+  
+  .filter-buttons {
+    flex-direction: row;
+  }
+}
 .filter-container {
     display: flex;
     flex-direction: column;
